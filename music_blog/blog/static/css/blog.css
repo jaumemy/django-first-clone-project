@@ -1,4 +1,10 @@
+.space{
+  margin: 8px;
+}
 
+.lineheigth{
+  line-height: 52px;
+}
 
 .techfont{
   font-family: 'Russo One', sans-serif;
@@ -10,7 +16,7 @@
   font-size: 1.5em;
 }
 
-.cenerstage{
+.centerstage{
   margin-left: auto;
   margin-right: auto;
 }

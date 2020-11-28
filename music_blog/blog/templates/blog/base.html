@@ -3,7 +3,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Blog</title>
+    <title>Music Blog</title>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
@@ -25,51 +25,43 @@
     font-family: 'Russo One', sans-serif; -->
 
   </head>
-  <body>
+  <body class="loader">
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg bg-light techfont">
+    <nav class="navbar navbar-expand-lg techfont" style="background-color:black;">
       <div class="container">
-        <div class="navbar-nav align-items-center">
-          <a class='navbar-brand bigbrand loader' href="{% url 'post_list' %}">Music Blog</a>
-          <a class="nav-item nav-link" href="{% url 'about' %}">About</a>
-          <a class="nav-item nav-link" href="https://www.github.com">Github</a>
-          <a class="nav-item nav-link" href="https://www.linkedin.com">Linkedin</a>
-        </div>
-
-        <div class='nav navbar-nav navbar-right'>
-
-          {% if user.is_authenticated %}
-          <a class="nav-item nav-link" href="{% url 'post_new' %}">New Post</a>
-          <a class="nav-item nav-link" href="{% url 'post_draft_list' %}">Drafts</a>
-          <a class="nav-item nav-link" href="{% url 'logout' %}">Log out</a>
-          <a >Welcome: {{ user.username }}</a>
-
-          {% else %}
-            <a class="nav-item nav-link" href="{% url 'login' %}" aria-label="Log In">
-              <span class="glyphicon glyphicon-user" aria-hiden="true"></span></a>
-
-          {% endif %}
-
-        </div>
-
+          <div class="navbar-nav align-items-center">
+            <a class="nav-brand bigbrand space" href="{% url 'post_list' %}">Music Blog</a>
+            <a class="nav-item nav-link space" href="{% url 'about' %}">About</a>
+            <a class="nav-item nav-link space" href="https://www.github.com">Github</a>
+            <a class="nav-item nav-link space" href="https://www.linkedin.com">Linkedin</a>
+          </div>
+          <div class='navbar-nav navbar-right lineheigth'>
+            {% if user.is_authenticated %}
+              <a class="nav-item nav-link space" href="{% url 'post_new' %}">New Post</a>
+              <a class="nav-item nav-link space" href="{% url 'post_draft_list' %}">Drafts</a>
+              <a class="nav-item nav-link space" href="{% url 'logout' %}">Log out</a>
+              <a > SuperUser : {{ user.username }}</a>
+            {% else %}
+              <a class="nav-item nav-link lineheigth" href="{% url 'login' %}" aria-label="Log In">
+                <span class="glyphicon glyphicon-user" aria-hiden="true"></span></a>
+            {% endif %}
+          </div>
       </div>
     </nav>
 
     <!-- CONTENT BLOCK -->
-    <div class="content container">
-      <div class="row">
-        <div class="col-md-8">
-          <div class="blog_posts">
-            {% block content %}
-            {% endblock %}
-
+    <div class="content container" style="background-color:white;">
+      <div class="jumbotron">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="blog_posts">
+              {% block content %}
+              {% endblock %}
+            </div>
           </div>
-
         </div>
-
       </div>
-
     </div>
 
 
