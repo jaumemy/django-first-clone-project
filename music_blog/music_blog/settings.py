@@ -26,7 +26,7 @@ SECRET_KEY = '-h*2i2)snw2t67dd9#@6dp9ecij)evj)j#7_=o%()fjt8-t^7t'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['jaumemy.pythonanywhere.com']
 
 
 # Application definition
