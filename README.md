@@ -1,8 +1,12 @@
+# About this project
+
+This is a very basic blog, where as a logged in user, you can crate posts, manage drafts, approve or reject comments, delete post or comments.      
+If you are a visitor, you can view posts, view comments, and add a comment wich should be accepted by a user before being shown      
+It's called music blog just because I wanted to add some changing color features, that's it
+
 # django-first-clone-project
 This is my first guided Django web project, uploaded on Github.    
 I will try to host it on pythonanywhere.
-
-It's called music blog just because I wanted to add some changing color features, that's it
 
 # Updated on Sat, Nov 28:
 
