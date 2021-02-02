@@ -26,7 +26,7 @@ It's called music blog just because I wanted to add some changing color in the b
            
 ## Technologies
 
-For this project, I used **Django**, and some basic **Html**, **Css** and **Javascript**.       
+For this project, I used **Django**, and some basic **Html** and **Css**.       
 It was my first project to deploy, so I learnt how to deploy it on [pythonanywhere.com](https://www.pythonanywhere.com/).
                
                
