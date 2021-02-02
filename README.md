@@ -1,19 +1,53 @@
-# About this project
+# Music Blog
+> A colorful django-based blog              
 
-This is a very basic blog, where as a logged in user, you can crate posts, manage drafts, approve or reject comments, delete post or comments.      
-If you are a visitor, you can view posts, view comments, and add a comment wich should be accepted by a user before being shown      
-It's called music blog just because I wanted to add some changing color features, that's it
+## Live
+You can take a look clicking [here](https://jaumemy.pythonanywhere.com/).
 
-# django-first-clone-project
-This is my first guided Django web project, uploaded on Github.    
-I will try to host it on pythonanywhere.
+![](music_blog_gif.gif)
 
-# Updated on Sat, Nov 28:
 
-Took me some time, but dortunately, less work than expected debugging, personalizing  and deploying it on the web.
+## Info
 
-Here is the final result. Hope you like it!
+This is a basic blog where you can:        
 
-[Music Blog on pythonanywhere!](http://jaumemy.pythonanywhere.com/)
+* Create posts        
+* Manage drafts        
+* Approve or reject comments (as superuser)        
+* Delete posts or comments        
+
+If you are not logged in you can still:        
+
+* View posts and comments        
+* Post as visitor (needs to be accepted by superuser)            
+    
+It's called music blog just because I wanted to add some changing color in the background and letters, just for fun. 
+              
+           
+## Technologies
+
+For this project, I used Django, and some basic Html, Css and Javascript.       
+It was my first project to deploy, so I learnt how to deploy it on [pythonanywhere.com](https://www.pythonanywhere.com/).
+               
+               
+                 
+## Motivation
+
+It was the first full project on Django and I tried to add my personal touch as much as I could.        
+_I was following Udemy's Course [Python and Django Full Stack Web Developer Bootcamp](https://www.udemy.com/share/101WisAEITeFhSTXoJ/)._
+                       
+                         
+## Meta
+                  
+JMontane – [jmontane.dev](https://www.jmontane.dev)
+
+
+Github profile [jaumemy](https://github.com/jaumemy/)
+
+
+
+
+
+
 
 
